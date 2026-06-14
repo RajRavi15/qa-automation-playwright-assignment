@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "type": "commonjs",
   "scripts": {
-    "api:bdd": "cucumber-js src/features/api.feature --require src/steps/**/*.ts --require-module ts-node/register --format allure-cucumberjs/reporter",
+    "api:bdd": "cucumber-js src/features/api.feature --require src/steps/**/*.ts --require-module ts-node/register --format progress",
+    "api:bdd:allure": "cucumber-js src/features/api.feature --require src/steps/**/*.ts --require-module ts-node/register --format allure-cucumberjs/reporter",
 
-  "ui:bdd": "cucumber-js src/features/**/*.feature --require src/steps/**/*.ts --require-module ts-node/register --tags \"@ui\" --format allure-cucumberjs/reporter",
+    "ui:bdd": "cucumber-js src/features/**/*.feature --require src/steps/**/*.ts --require-module ts-node/register --tags \"@ui\" --format progress",
+    "ui:bdd:allure": "cucumber-js src/features/**/*.feature --require src/steps/**/*.ts --require-module ts-node/register --tags \"@ui\" --format allure-cucumberjs/reporter",
 
-  "ui:advanced": "cucumber-js src/features/advanced.feature --require src/steps/**/*.ts --require-module ts-node/register --format allure-cucumberjs/reporter",
+    "ui:advanced": "cucumber-js src/features/advanced.feature --require src/steps/**/*.ts --require-module ts-node/register --format allure-cucumberjs/reporter",
 
   "allure:generate": "allure generate allure-results --clean -o allure-report",
   "allure:open": "allure open allure-report"

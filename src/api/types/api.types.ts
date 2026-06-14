@@ -18,4 +18,6 @@ export interface BrandsResponse {
 export interface ApiResponse {
   responseCode: number;
   message?: string;
+  products?: Product[];
+  brands?: { brand: string }[];
 }

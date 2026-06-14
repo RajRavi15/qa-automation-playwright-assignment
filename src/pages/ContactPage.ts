@@ -17,7 +17,7 @@ export class ContactPage {
   constructor(page: Page) {
     this.page = page;
 
-    // ✅ USER-FACING LOCATORS (ASSESSMENT RULE)
+    // USER-FACING LOCATORS (ASSESSMENT RULE)
     
 
     this.nameInput = page.getByPlaceholder('Name');

@@ -33,6 +33,7 @@ export interface CustomWorld extends IWorld {
   headerPage: HeaderPage;
 
   user?: TestUser;
-  response?: ApiResponse;
-  body?: ApiResponse;
+   response?: ApiResponse;
+   body?: ApiResponse;
+
 }
